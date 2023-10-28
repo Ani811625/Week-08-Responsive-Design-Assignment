@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (min-width:769px) {
+            .image-gallery {
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+           width: 650px;
+           display: grid;
+           grid-template-columns: repeat(3, 1fr);
+           gap: 10px;
+           column-gap: 2px;
+       }
+
+       .image-gallery img {
+        border: 3px solid black;
+        border-radius: 5px;
+           width: 200px;
+           height: 200px;
+       }
+       .word{
+           text-align: center;
+        }
+        }
+        @media screen and (max-width:768px) {
+            .image-gallery {
+           width:300px;
+           display: grid;
+           grid-template-columns: repeat(1);
+           gap: 10px;
+           column-gap: 2px;
+       }
+
+       .image-gallery img {
+        border: 3px solid black;
+        border-radius: 5px;
+           width: 300px;
+           height: 300px;
+       }
+       .word{
+           text-align: center;
+        }
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="word">RANDOM IMAGES</h1>
+    <div class="image-gallery">
+        <img src="person1.jpg" alt="Image 1">
+        <img src="person2.jpg" alt="Image 2">
+        <img src="person3.jpg" alt="Image 3">
+        <img src="person4.jpg" alt="Image 4">
+        <img src="person5.png" alt="Image 5">
+        <img src="pikachu.png" alt="Image 6">
+        <img src="Bulbasaour.png" alt="Image 7">
+        <img src="Charizard.png" alt="Image 8">
+        <img src="Squirtle.png" alt="Image 9">
+    </div>
+</body>
+</html>
